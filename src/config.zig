@@ -11,7 +11,7 @@ pub const replicas_max = 5;
 /// This impacts the amount of memory allocated at initialization by the server.
 /// This determines the size of the VR client table used to cache replies to clients by client ID.
 /// Each client has one entry in the VR client table to store the latest `message_size_max` reply.
-pub const clients_max = 3;
+pub const clients_max = 10;
 
 /// The minimum number of nodes required to form a quorum for replication:
 /// Majority quorums are only required across view change and replication phases (not within).
